@@ -428,11 +428,13 @@ nav a:hover {
 
     display: grid;
 
-    grid-template-columns: 80px 1fr;
-
-    gap: 35px;
+    grid-template-columns: minmax(0, 1fr);
 
     margin-bottom: 80px;
+}
+
+.timeline-content {
+    min-width: 0;
 }
 
 
