@@ -1273,3 +1273,577 @@ nav a:hover {
     }
 
 }
+/* ==========================================
+   ACHIEVEMENTS SECTION
+========================================== */
+
+.achievements-section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 120px 25px;
+}
+
+
+/* ==========================================
+   ACHIEVEMENT GRID
+========================================== */
+
+.achievements-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+
+.achievement-card {
+    position: relative;
+
+    min-height: 300px;
+
+    padding: 28px;
+
+    background: #101010;
+
+    border: 1px solid #222222;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+
+    border-color: #444444;
+}
+
+
+/* Number */
+
+.achievement-number {
+    position: absolute;
+
+    top: 25px;
+
+    right: 25px;
+
+    color: #555555;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+}
+
+
+/* Icon */
+
+.achievement-icon {
+    width: 45px;
+    height: 45px;
+
+    border: 1px solid #333333;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+
+    font-size: 18px;
+
+    margin-bottom: 80px;
+}
+
+
+/* Text */
+
+.achievement-card h3 {
+    font-size: 20px;
+
+    margin-bottom: 12px;
+}
+
+.achievement-card p {
+    color: #777777;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   GITHUB CARD
+========================================== */
+
+.github-card {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    padding: 40px;
+
+    border: 1px solid #292929;
+
+    border-radius: 12px;
+
+    background: #0e0e0e;
+}
+
+.github-content {
+    max-width: 600px;
+}
+
+.github-content .section-label {
+    margin-bottom: 12px;
+}
+
+.github-content h3 {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.github-content > p:last-child {
+    color: #777777;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+
+/* GitHub button */
+
+.github-btn {
+    flex-shrink: 0;
+
+    text-decoration: none;
+
+    color: #000000;
+
+    background: #ffffff;
+
+    padding: 13px 22px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+.github-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   ACHIEVEMENTS RESPONSIVE
+========================================== */
+
+@media (max-width: 950px) {
+
+    .achievements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .achievements-section {
+        padding: 80px 20px;
+    }
+
+    .achievements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-card {
+        min-height: 240px;
+    }
+
+    .achievement-icon {
+        margin-bottom: 50px;
+    }
+
+    .github-card {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        padding: 28px;
+    }
+
+    .github-content h3 {
+        font-size: 24px;
+    }
+
+}
+/* ==========================================
+   CONTACT SECTION
+========================================== */
+
+.contact-section {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 120px 25px;
+}
+
+.contact-container {
+    width: 100%;
+}
+
+
+/* ==========================================
+   CONTACT HEADING
+========================================== */
+
+.contact-heading {
+    max-width: 800px;
+
+    margin-bottom: 80px;
+}
+
+.contact-heading h2 {
+    font-size: clamp(45px, 7vw, 80px);
+
+    line-height: 1.05;
+
+    margin-bottom: 25px;
+}
+
+.contact-heading h2 span {
+    display: block;
+
+    color: #777777;
+}
+
+.contact-heading > p:last-child {
+    max-width: 600px;
+
+    color: #888888;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   CONTACT CONTENT
+========================================== */
+
+.contact-content {
+    display: grid;
+
+    grid-template-columns: 0.8fr 1.2fr;
+
+    gap: 100px;
+
+    align-items: start;
+}
+
+
+/* ==========================================
+   CONTACT INFORMATION
+========================================== */
+
+.contact-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 35px;
+}
+
+.contact-item {
+    display: flex;
+
+    gap: 20px;
+
+    padding-bottom: 25px;
+
+    border-bottom: 1px solid #222222;
+}
+
+.contact-number {
+    color: #555555;
+
+    font-size: 11px;
+
+    letter-spacing: 2px;
+}
+
+.contact-label {
+    display: block;
+
+    color: #555555;
+
+    font-size: 10px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+}
+
+.contact-item a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+.contact-item a:hover {
+    color: #888888;
+}
+
+
+/* ==========================================
+   CONTACT FORM
+========================================== */
+
+.contact-form {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 25px;
+}
+
+.form-group {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.form-group label {
+    color: #aaaaaa;
+
+    font-size: 12px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    background: #101010;
+
+    border: 1px solid #292929;
+
+    border-radius: 7px;
+
+    padding: 14px 16px;
+
+    color: #ffffff;
+
+    font-family: inherit;
+
+    font-size: 14px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+.form-group input {
+    height: 50px;
+}
+
+.form-group textarea {
+    resize: vertical;
+
+    min-height: 150px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #666666;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #555555;
+}
+
+
+/* Submit button */
+
+.submit-btn {
+    align-self: flex-start;
+
+    background: #ffffff;
+
+    color: #000000;
+
+    border: none;
+
+    padding: 14px 22px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    transform: translateY(-3px);
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.footer {
+    border-top: 1px solid #222222;
+
+    margin-top: 50px;
+}
+
+.footer-container {
+    max-width: 1200px;
+
+    margin: auto;
+
+    padding: 35px 25px 25px;
+}
+
+.footer-top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding-bottom: 35px;
+
+    border-bottom: 1px solid #1d1d1d;
+}
+
+.footer-logo {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    font-size: 28px;
+
+    font-weight: 700;
+}
+
+.footer-top p {
+    color: #666666;
+
+    font-size: 13px;
+}
+
+.footer-bottom {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding-top: 25px;
+}
+
+.footer-bottom > p {
+    color: #555555;
+
+    font-size: 11px;
+}
+
+.footer-links {
+    display: flex;
+
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #666666;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ffffff;
+}
+
+
+/* ==========================================
+   CONTACT & FOOTER RESPONSIVE
+========================================== */
+
+@media (max-width: 800px) {
+
+    .contact-content {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .contact-section {
+        padding: 80px 20px;
+    }
+
+    .contact-heading {
+        margin-bottom: 55px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        gap: 15px;
+    }
+
+}
