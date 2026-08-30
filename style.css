@@ -340,3 +340,272 @@ nav a:hover {
     }
 
 }
+/* ==========================================
+   JOURNEY SECTION
+========================================== */
+
+.journey-section {
+    max-width: 1000px;
+
+    margin: auto;
+
+    padding: 120px 25px;
+}
+
+
+/* Section heading */
+
+.section-heading {
+    max-width: 650px;
+
+    margin-bottom: 80px;
+}
+
+.section-label {
+    font-size: 13px;
+
+    letter-spacing: 3px;
+
+    color: #777777;
+
+    margin-bottom: 15px;
+}
+
+.section-heading h2 {
+    font-size: clamp(40px, 6vw, 65px);
+
+    line-height: 1.1;
+
+    margin-bottom: 20px;
+}
+
+.section-heading h2 span {
+    color: #777777;
+}
+
+.section-description {
+    color: #888888;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* ==========================================
+   TIMELINE
+========================================== */
+
+.timeline {
+    position: relative;
+
+    padding-left: 70px;
+}
+
+
+/* Vertical line */
+
+.timeline::before {
+    content: "";
+
+    position: absolute;
+
+    left: 19px;
+
+    top: 0;
+    bottom: 0;
+
+    width: 1px;
+
+    background: #292929;
+}
+
+
+/* Timeline item */
+
+.timeline-item {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns: 80px 1fr;
+
+    gap: 35px;
+
+    margin-bottom: 80px;
+}
+
+
+/* Number */
+
+.timeline-number {
+    position: absolute;
+
+    left: -70px;
+
+    width: 40px;
+    height: 40px;
+
+    border: 1px solid #333333;
+
+    border-radius: 50%;
+
+    background: #0a0a0a;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    font-size: 11px;
+
+    color: #777777;
+
+    z-index: 2;
+}
+
+
+/* Content */
+
+.timeline-content {
+    border: 1px solid #222222;
+
+    background: #101010;
+
+    border-radius: 12px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+}
+
+.timeline-content:hover {
+    border-color: #444444;
+
+    transform: translateX(5px);
+}
+
+
+/* Year */
+
+.timeline-year {
+    display: inline-block;
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    color: #777777;
+
+    margin-bottom: 12px;
+}
+
+
+/* Title */
+
+.timeline-content h3 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+}
+
+
+/* Description */
+
+.timeline-content p {
+    color: #888888;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    max-width: 650px;
+}
+
+
+/* Tags */
+
+.timeline-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 8px;
+
+    margin-top: 20px;
+}
+
+.timeline-tags span {
+    padding: 6px 10px;
+
+    border: 1px solid #292929;
+
+    border-radius: 5px;
+
+    color: #888888;
+
+    font-size: 11px;
+}
+
+
+/* Current milestone */
+
+.timeline-item.current .timeline-number {
+    background: #ffffff;
+
+    color: #000000;
+
+    border-color: #ffffff;
+}
+
+.timeline-item.current .timeline-content {
+    border-color: #444444;
+}
+
+
+/* ==========================================
+   JOURNEY RESPONSIVE
+========================================== */
+
+@media (max-width: 600px) {
+
+    .journey-section {
+        padding: 80px 20px;
+    }
+
+    .timeline {
+        padding-left: 45px;
+    }
+
+    .timeline::before {
+        left: 14px;
+    }
+
+    .timeline-number {
+        left: -45px;
+
+        width: 30px;
+        height: 30px;
+
+        font-size: 9px;
+    }
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+
+        gap: 0;
+
+        margin-bottom: 50px;
+    }
+
+    .timeline-content {
+        padding: 22px;
+    }
+
+    .timeline-content h3 {
+        font-size: 21px;
+    }
+
+}
