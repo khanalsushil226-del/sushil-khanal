@@ -1847,3 +1847,91 @@ nav a:hover {
     }
 
 }
+/* ==========================================
+   MOBILE HAMBURGER MENU
+========================================== */
+
+.hamburger {
+    display: none;
+    width: 42px;
+    height: 42px;
+
+    background: transparent;
+    border: 1px solid #292929;
+    border-radius: 7px;
+
+    cursor: pointer;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.hamburger span {
+    width: 20px;
+    height: 2px;
+
+    background: #ffffff;
+
+    transition: 0.3s;
+}
+
+
+/* ==========================================
+   MOBILE NAVIGATION
+========================================== */
+
+@media (max-width: 700px) {
+
+    .nav-container {
+        height: 65px;
+        padding: 0 20px;
+    }
+
+    nav {
+        position: absolute;
+
+        top: 65px;
+        left: 0;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: 0;
+
+        background: rgba(10, 10, 10, 0.97);
+        backdrop-filter: blur(10px);
+
+        border-bottom: 1px solid #222;
+
+        max-height: 0;
+        overflow: hidden;
+
+        transition: max-height 0.35s ease;
+    }
+
+    nav a {
+        padding: 16px 20px;
+
+        border-bottom: 1px solid #1d1d1d;
+
+        font-size: 14px;
+    }
+
+    nav.active {
+        max-height: 400px;
+    }
+
+    .contact-btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+}
